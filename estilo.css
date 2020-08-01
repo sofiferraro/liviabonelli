@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+
+
+.transition5 {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+  }
+
+body{width: 100%;
+	background-color: black;}
+
+.video {background-color: #0e0e0e;
+        width: 100%;
+		height: 100vh;}
+		
+.animacion-body{background-color: #0e0e0e;
+	
+	width: 100%;
+	height: 100vh;}	
+		
+a{transition: filter .7s;}
+a:hover{filter: brightness(70%);
+		} 
+a:link, a:visited, a:active {
+	
+	text-decoration:none;
+	color: white;
+}	
+li{list-style: none;}
+.portada {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+		
+	
+.livia-portada-menu{width: 100%;
+	height: 100vh;
+	background-image: url(imagenes/fondonegro.gif);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;}
+
+.firmalivia{width: 4em;
+			filter: brightness(0%);
+			transition: filter 1.3s;}
+.firmalivia:hover{filter: brightness(100%)}				
+
+.text-center{text-align: center}
+.hover:hover{filter: brightness(70%);}
+.hover-inv:hover{filter: brightness(30%);}
+.shadow{text-shadow:   2px 8px 8px #000000;}
+.subtitulo{display: flex;
+			flex-direction: row;
+			justify-content: space-between;}
+
+.texto-blanco{ color: white;
+				font-family: 'Montserrat', sans-serif; }
+.texto-gris{color: #a5a5a5;}
+.texto-negro{color: #181616;}
+.montserrat{font-family: 'Montserrat', sans-serif;}	
+
+.bold{font-weight: 700}
+.thin{font-weight: 200;}				  
+.htrescelu{font-size: 2rem;}
+.hseiscelu{font-size: 1rem;
+			font-weight: 200;}
+
+.hsietecelu{font-size: .8em;}
+.copyright{position: absolute;
+			top:95%}
+.column{display: flex;
+		flex-direction: column;}
+.logo5{width: 1.2em;
+		z-index: 100;}
+.page-footer{background-color: #232323;}					
+.copy{background-color: #191919;}
+.fondo-blanco{background-color: #fff;}
+.margin-0{margin:0;
+					padding: 0;
+					padding-right: 0;
+					padding-left: 0;}
+
+
+/*---------------------DROPDOWN COMIENZO--------------------------*/
+main div.dropdown-toggle,
+main div.dropdown-toggle a {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  font-weight: 400;
+ text-transform: lowercase;
+ text-align: center;
+  margin: .4rem 0 0 0;
+  font-size: 1rem;
+  letter-spacing: 0.22rem;
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: filter 1s;
+}
+main div.dropdown-toggle a:hover{
+	filter: brightness(70%);
+}
+main div.dropdown-toggle.link {text-decoration: none;}
+
+main div.dropdown-info {
+  display: none;
+}
+main div.dropdown-info a {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  color: #e4e4e4;
+  position: relative;
+}
+main div.dropdown-info a:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgb(155, 155, 155);
+  content: '';
+  display: block;
+  height: 0.05rem;
+  left: 0;
+  position: absolute;
+  width: 0;
+}
+main div.dropdown-info a:hover {
+  cursor: pointer;
+}
+ul .subsubmenu a:hover:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgb(180, 13, 13);
+  content: '';
+  display: block;
+  height: 0.08rem;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+main div.dropdown-info ul li {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  color: #3D3D3D;
+  list-style: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.subrayado-rojo a:after {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	background: rgb(155, 155, 155);
+	content: '';
+	display: block;
+	height: 0.05rem;
+	left: 0;
+	position: absolute;
+	width: 0;
+  }
+.subrayado-rojo a:hover {
+	cursor: pointer;
+  }
+  .subrayado-rojo a:hover:after {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	background: rgba(20, 201, 192, 0.562);
+	content: '';
+	display: block;
+	height: 0.08rem;
+	left: 0;
+	position: absolute;
+	width: 100%;
+  }
+
+.negrita {font-weight: 700;}
+
+ul{margin: 0;
+	padding-inline-start:0;}
+.menu-ul{text-align: center;
+		 padding-right: .5em;}	
+
+
+main div.dropdown-info ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  
+  text-decoration: none;
+  color: rgba(231, 231, 231, 0.658);
+  font-size: .9rem;
+  margin-top: 1em ;
+  text-align: center;
+}
+main div.dropdown-info ul li a:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+main div.dropdown-info ul li ul {
+  margin-left: 0rem;
+}
+main div.dropdown-info ul li ul li {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.0rem;
+  color: #3D3D3D;
+  font-size: 1.0rem;
+}
+.dropdown-toggle::after{border: none;}
+main.menu-portada {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.topbar3 {background-color: black;
+		background-image: url(imagenes/fondonegrocelu.gif);
+		}
+
+
+/*------------------------------DROPDOWN FIN---------------------------------*/
+
+/*-------------------------------DROPDOWN NAVBAR ---------------------------------------*/
+
+
+main div.dropdown-toggle2,
+main div.dropdown-toggle2 a {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: filter 1s;
+}
+main div.dropdown-toggle a:hover{
+	filter: brightness(70%);
+}
+main div.dropdown-toggle.link {text-decoration: none;}
+
+main div.menu-nav-info {
+  display: none;
+}
+main div.menu-nav-info a {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  color: #b30000;
+  position: relative;
+}
+main div.menu-nav-info a:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgb(155, 155, 155);
+  content: '';
+  display: block;
+  height: 0.05rem;
+  left: 0;
+  position: absolute;
+  width: 0;
+}
+main div.menu-nav-info a:hover {
+  cursor: pointer;
+}
+main div.menu-nav-info a:hover:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgb(255, 255, 255);
+  content: '';
+  display: block;
+  height: 0.08rem;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+main div.menu-nav-info ul li {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  color: #3D3D3D;
+  list-style: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.subrayado-rojo a:after {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	background: rgb(155, 155, 155);
+	content: '';
+	display: block;
+	height: 0.05rem;
+	left: 0;
+	position: absolute;
+	width: 0;
+  }
+.subrayado-rojo a:hover {
+	cursor: pointer;
+  }
+  .subrayado-blanco a:hover:after {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	background: rgb(245, 245, 245);
+	content: '';
+	display: block;
+	height: 0.08rem;
+	left: 0;
+	position: absolute;
+	width: 100%;
+  }
+
+.negrita {font-weight: 700;}
+
+ul{margin: 0;
+	padding-inline-start:0;}
+.menu-ul-nav{
+		 padding-right: .5em;
+			text-align: left;}	
+
+
+main div.dropdown-info ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  
+  text-decoration: none;
+  color: rgba(231, 231, 231, 0.658);
+  font-size: .9rem;
+  margin-top: 1em ;
+  text-align: center;
+}
+main div.dropdown-info ul li a:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+main div.dropdown-info ul li ul {
+  margin-left: 0rem;
+}
+main div.dropdown-info ul li ul li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 2.0rem;
+  color: #3D3D3D;
+  font-size: 1.0rem;
+}
+
+main div.dropdown-info ul li ul{
+	display: none;
+  }
+/*
+  main div.dropdown-info ul li:hover > ul{
+	display: block;
+  }*/
+
+.dropdown-toggle::after{border: none;}
+main.menu-nav{
+	 display: block;
+	 padding-left: .5em; 
+    
+}
+
+
+a.submenu:hover{color:#1fa89d}
+
+
+
+
+
+/*--------------------------FIN-----DROPDOWN NAVBAR ---------------------------------------*/
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler {color: rgba(255, 255, 255, 0.83);
+																}
+.instagram{display: none}
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #ffffff9e;
+}
+
+
+.navbar-inverse .navbar-nav .nav-link {background-color:transparent}
+
+#mypath{
+	stroke-opacity: .2;
+	stroke-dashoffset: 1000;
+	stroke-dasharray: 50;
+	animation-name: padda;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction:alternate;
+}
+svg{width:10em;
+	height: 3em;
+	}
+@keyframes padda {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+.firma-livia-nav{width:3em}
+
+/*----------------------------RETRATOS-----------------------*/
+.navbar-inverse .navbar-nav .nav-link {
+										color: rgba(51, 51, 51, 0.836);
+}
+.dropdown-menu{background-color: transparent;
+	border:0;
+	padding: 0;
+	margin: 0;
+	}
+	.dropdown-item{padding: .5em;
+				margin: 0;
+				
+				}
+.navbar-inverse .navbar-nav .nav-link {
+					color: #ffffffdb;
+					text-shadow: #0e0e0e 3px 3px 30px;
+				}				
+.dropdown-item:focus, .dropdown-item:hover{color: #1fa89d;}
+
+.retratos1{background-image: url(imagenes/fondonegrocelu.gif);
+			}
+
+/*-----------mujeres modal------------------*/
+.modal-content {background-color: rgba(150, 150, 150, 0);
+				border:none;
+				}
+.modal-body{padding: 0;}				
+
+.texto-blanco{color: #e4e4e4;}	
+
+main div.menu-tipo, main div.menu-tipo a {font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+	line-height: 1.5;
+	padding-top: .25em;
+	}
+
+
+@media (min-width: 700px) and (orientation: landscape){
+	ul{margin: 0;
+		padding-inline-start:0;}
+	
+														.dropdown-item.active, .dropdown-item:active{background: transparent;}
+														.dropdown-item:focus, .dropdown-item:hover {background-color: transparent;}
+														.htrescelu{font-size: 5rem;}
+														.hseiscelu{font-size: 2.4rem;
+															font-weight: 200;}
+														.instagram{display: block}
+														.retratos1{background-image: url(imagenes/fondonegro.gif);
+																				background-repeat: no-repeat;
+																				background-attachment: fixed;}					
+														.firmalivia{width: 6em;}
+
+														.tamaño-texto-liv{font-size: 1.2em;}
+														.tamaño-texto-liv:hover{
+																				cursor: pointer;}					
+																			
+														.htrescelu{font-size: 2rem;}
+														.hseiscelu{font-size: 1rem;}
+													
+														.hover-transition{transition: filter .7s;
+																			cursor: pointer;}
+														.hover-transition:hover{filter: brightness(50%);
+																} 
+														.hover-transition-invert {filter: brightness(80%);
+																				transition: filter .7s;
+																				cursor: pointer;}
+														.hover-transition-invert:hover{filter: brightness(100%);
+														} 
+														.hover-transition-byn{filter: grayscale(100%);
+																				transition: filter .7s;
+																				cursor: pointer;}
+														.hover-transition-byn:hover{filter: grayscale(0%);
+														} 	
+														 .lightbox-div {display:flex;
+																	background-color: rgba(0, 0, 0, 0.678);
+																	top:0;
+																	justify-content: center;
+																	align-items: center;
+																	height: 100vh;
+																	}
+														.display-none{display: none;
+																		transition: opacity 5s;
+																		opacity:1 ;
+																		height: 100%;}				
+														 
+														
+														.lightbox-img{height: 90vh;
+																		opacity: 0;
+																	transition: opacity 5s;}	
+														.lightbox-img::after{opacity: 1;}						  
+														/*
+														#container {
+															opacity: 0;
+															-webkit-transition: all 0.5s ease-in-out;
+															-moz-transition: all 0.5s ease-in-out;
+															-ms-transition: all 0.5s ease-in-out;
+															-o-transition: all 0.5s ease-in-out;
+															transition: all 0.5s ease-in-out;
+														  }*/
+
+														  /*----------------------------MODAL FOTOS LIGHTBOX ----------------------------*/
+														  .modal-dialog {margin-top: 1em;
+															width: 40%;} 
+														  .modal-dialog-vertical-1{width: 33.5%;}		
+															.modal-dialog-vertical-2{width: 36.5%;}	
+															.modal-dialog-vertical-3{width: 43%;
+																					margin-top:2em ;}
+															.modal-dialog-vertical-4{width: 38%;}	
+															.modal-dialog-vertical-5{width: 60%;}	
+															.modal-dialog-vertical-6{width: 50%;}	
+
+
+															a.submenu{color: rgb(255, 255, 255) !important;
+																		filter: brightness(70%);
+																		transition: all .7s;}
+
+															a.submenu:hover{color:rgb(218, 18, 18) !important;
+																filter: brightness(100%); }
+															
+
+main div.menu-tipo, main div.menu-tipo a {font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+	line-height: 1.5;
+	padding-top: .25em;
+	}
+
+.dropdown-menu-fondo{
+	background-image: url(imagenes/fondonegro.gif) ;
+	width: 16em;
+	
+}
+.dropdown-menu-fondo2{
+	background-image: url(imagenes/fondonegro.gif) ;
+	width: 8em;
+	
+}
+
+}

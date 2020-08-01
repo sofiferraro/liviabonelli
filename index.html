@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>	Livia Bonelli </title>
+    
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="estilo2.css" />
+    <link rel="shortcut icon" href="imagenes/firmalivia.png">
+ <style>
+ 
+ </style>
+  </head>
+  <body>
+    
+        <a class="firmaboton" href="#"><img class="firma" src="firmaliviablanca.png" alt=""></a>
+
+
+        <!--------------------MENU---------------------------->
+
+        
+           <main class="menu-oculto" id="menu"> 
+            
+                
+                <section >
+                    <div class="dropdown-container">
+                        <div class="dropdown-toggle  link texto-blanco montserrat thin tamaño-texto-liv hover-transition">personal</div>
+                        <div class="subrayado-rojo dropdown-info pt-2 ">
+                            <ul class="menu-ul"> 
+                              
+                                <li><a class=" texto-blanco montserrat thin " href="mujeres.html">mujeres</a></li>
+                                <li><a class=" texto-blanco montserrat thin " href="retratos1.html">retratos I</a></li>
+                                <li><a class=" texto-blanco montserrat thin " href="retratos2.html">retratos I</a></li>
+                                <li><a class=" texto-blanco montserrat thin " href="figuras.html">figuras</a></li>
+                            </ul >
+                            
+                        </div>
+                    </div>
+                </section>
+                    
+                
+
+          <!-- 2-->
+                
+                  <section class="subrayado-rojo">
+                    <div class="dropdown-container">
+                        <div class="subrayado-rojo boton-directo dropdown-toggle link texto-blanco montserrat thin tamaño-texto-liv hover-transition">trabajo</div>
+                        <div class="subrayado-rojo dropdown-info pt-2 ">
+                            <ul class="menu-ul"> 
+                              
+                                <li><a class=" texto-blanco montserrat thin " href="#">1</a></li>
+                                <li><a class=" texto-blanco montserrat thin " href="#">2</a></li>
+
+                            </ul >
+                            
+                        </div>
+                    </div>
+                  </section>
+                  <section >
+                    <div class="dropdown-container">
+                        <div class="dropdown-toggle link texto-blanco montserrat thin tamaño-texto-liv hover-transition">exposiciones</div>
+                        <div class="subrayado-rojo dropdown-info pt-2 ">
+                            <ul class="menu-ul"> 
+                              <li><a class=" texto-blanco montserrat thin " href="exposiciones.html">gallery day</a></li>
+                            </ul class="menu-ul">
+                            
+                        </div>
+                    </div>
+                </section>
+                  <section >
+                      <div class=" dropdown-container">
+                          <div class=" dropdown-toggle link texto-blanco montserrat thin tamaño-texto-liv hover-transition">CONTACTO</div>
+                          <div class="subrayado-rojo dropdown-info pt-2 ">
+                              <ul class="menu-ul"> 
+                                  <li><a class=" texto-blanco montserrat thin " href="mailto:liviabonelli.dg@gmail.com">liviabonelli.dg@gmail.com</a></li>
+                                  <li><a class=" texto-blanco montserrat thin " href="https://www.instagram.com/jpg.livia/">@jpg.livia</a></li>
+                            
+                              </ul class="menu-ul">
+                              
+                          </div>
+                      </div>
+                  </section>
+                  <section >
+    
+                </section>
+
+                </main>
+
+        <div class="container-fluid vacio-arriba vacio">
+
+        </div>
+        <div class="container-fluid vacio-abajo vacio">
+
+        </div>
+     
+
+
+
+
+
+
+
+
+ <!------------------MENU---------------------->
+
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>	
+ <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+          $(".dropdown-toggle").click(function(){
+              $(this).toggleClass("open")
+              $(this).parent().children(".dropdown-info").slideToggle("slow");
+          });
+          
+      });
+  
+      $(document).ready(function(){
+          $(".submenu").click(function(){
+              $(this).toggleClass("open")
+              $(this).parent().children(".subsubmenu").slideToggle("slow");
+          });
+
+      });
+
+     
+
+//      $('.firmaboton').click(function(){
+//      menu.open(1000)
+//      })
+       $(document).ready(function(){
+         $('.firmaboton').click(function(){
+            $('.firmaboton').fadeOut("slow");
+            $('#menu').fadeIn("90000")
+         });
+       }); 
+       $(document).ready(function(){
+        $('.vacio').click(function(){
+            $('.firmaboton').fadeIn("slow");
+            $('#menu').fadeOut("900000");
+            
+         });
+        });
+
+  </script>
+  <!------------------FIN MENU---------------------->
+   <!------------------FONDO---------------------->
+    <script src="three.min.js"></script>
+    <script src="postprocessing.min.js"></script>
+    <script>
+      let scene, camera, cloudParticles = [],composer;
+
+      function init() {
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(60,window.innerWidth / window.innerHeight,1,1000);
+        camera.position.z = 1;
+        camera.rotation.x = 1.16;
+        camera.rotation.y = -0.12;
+        camera.rotation.z = 0.27;
+
+        let ambient = new THREE.AmbientLight(0x000000);
+        scene.add(ambient);
+
+        let directionalLight = new THREE.DirectionalLight(0x78160d);
+        directionalLight.position.set(0,0,1);
+        scene.add(directionalLight);
+
+        let orangeLight = new THREE.PointLight(0x2e2b69,50,120,2.2);
+        orangeLight.position.set(100,300,100);
+        scene.add(orangeLight);
+        let redLight = new THREE.PointLight(0xdb1a09,20,480,2.7);
+        redLight.position.set(100,300,100);
+        scene.add(redLight);
+        let blueLight = new THREE.PointLight(0x00000,20,420,1.7);
+        blueLight.position.set(300,300,200);
+        scene.add(blueLight);
+
+        renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth,window.innerHeight);
+        scene.fog = new THREE.FogExp2(0x00000, 0.001);
+        renderer.setClearColor(scene.fog.color);
+        document.body.appendChild(renderer.domElement);
+
+        let loader = new THREE.TextureLoader();
+        loader.load("smoke.png", function(texture){
+          cloudGeo = new THREE.PlaneBufferGeometry(500,500);
+          cloudMaterial = new THREE.MeshLambertMaterial({
+            map:texture,
+            transparent: true
+          });
+
+          for(let p=0; p<50; p++) {
+            let cloud = new THREE.Mesh(cloudGeo, cloudMaterial);
+            cloud.position.set(
+              Math.random()*1020 -400,
+              500,
+              Math.random()*500-500
+            );
+            cloud.rotation.x = 1.16;
+            cloud.rotation.y = -0.12;
+            cloud.rotation.z = Math.random()*2*Math.PI;
+            cloud.material.opacity = 0.20;
+            cloudParticles.push(cloud);
+            scene.add(cloud);
+          }
+        });
+        loader.load("stars.jpg", function(texture){
+
+          const textureEffect = new POSTPROCESSING.TextureEffect({
+            blendFunction: POSTPROCESSING.BlendFunction.COLOR_DODGE,
+            texture: texture
+          });
+          textureEffect.blendMode.opacity.value = 0.02;
+
+          const bloomEffect = new POSTPROCESSING.BloomEffect({
+                blendFunction: POSTPROCESSING.BlendFunction.COLOR_DODGE,
+                kernelSize: POSTPROCESSING.KernelSize.SMALL,
+                useLuminanceFilter: true,
+                luminanceThreshold: 0.3,
+                luminanceSmoothing: 0.75
+              });
+          bloomEffect.blendMode.opacity.value = 1.5;
+
+          let effectPass = new POSTPROCESSING.EffectPass(
+            camera,
+            bloomEffect,
+            textureEffect
+          );
+          effectPass.renderToScreen = true;
+
+          composer = new POSTPROCESSING.EffectComposer(renderer);
+          composer.addPass(new POSTPROCESSING.RenderPass(scene, camera));
+          composer.addPass(effectPass);
+          
+          window.addEventListener("resize", onWindowResize, false);
+          render();
+        });
+      }
+      function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      }
+      function render() {
+        cloudParticles.forEach(p => {
+          p.rotation.z -=0.003;
+        });
+        composer.render(0.1);
+        requestAnimationFrame(render);
+      }
+      init();
+    </script>
+    <!----------------FIN FONDO-------------------------->
+  </body>
+</html>
